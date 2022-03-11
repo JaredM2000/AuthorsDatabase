@@ -18,6 +18,6 @@ sudo npm install multer
 
 sudo service apache2 stop
 
-cp ~/Downloads/index.js .
+cp ~/Downloads/AuthorsDatabase-main/index.js .
 
 sudo node index.js
