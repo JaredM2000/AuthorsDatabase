@@ -1,0 +1,23 @@
+npm -v
+
+mkdir ~/Node
+
+cd ~/Node
+
+npm -init
+
+sudo npm install nodejs --save
+
+sudo npm install express
+
+sudo npm install mysql
+
+sudo npm install body-parser
+
+sudo npm install multer
+
+sudo service apache2 stop
+
+cp ~/Downloads/index.js .
+
+sudo node index.js
