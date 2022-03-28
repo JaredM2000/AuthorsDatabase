@@ -12,7 +12,7 @@ function authorGet(id, con, res)
     var sql = "SELECT au_id, au_lname, au_fname, phone, address, city, state, zip, if(contract=1,1,0) AS contract FROM authors WHERE au_id = ?"; 
     con.query(sql, [id] , function (err, result, fields) {
             if (err) throw err;
-            res.json( result );
+            res.json( result[0] );
     });
 }
 
